@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		940FD9C324B39F9500C0C813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940FD9C224B39F9500C0C813 /* Assets.xcassets */; };
 		940FD9C624B39F9500C0C813 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940FD9C524B39F9500C0C813 /* Preview Assets.xcassets */; };
 		940FD9C924B39F9500C0C813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940FD9C724B39F9500C0C813 /* LaunchScreen.storyboard */; };
+		940FD9D324B39FF200C0C813 /* Game in Frameworks */ = {isa = PBXBuildFile; productRef = 940FD9D224B39FF200C0C813 /* Game */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		940FD9C524B39F9500C0C813 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		940FD9C824B39F9500C0C813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		940FD9CA24B39F9500C0C813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		940FD9D024B39FC800C0C813 /* Game */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Game; path = ../BullsEyePlus/Packages/Game; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				940FD9D324B39FF200C0C813 /* Game in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +41,10 @@
 		940FD9B224B39F9400C0C813 = {
 			isa = PBXGroup;
 			children = (
+				940FD9D024B39FC800C0C813 /* Game */,
 				940FD9BD24B39F9400C0C813 /* TVBullsEye */,
 				940FD9BC24B39F9400C0C813 /* Products */,
+				940FD9D124B39FF200C0C813 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +77,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		940FD9D124B39FF200C0C813 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,6 +100,9 @@
 			dependencies = (
 			);
 			name = TVBullsEye;
+			packageProductDependencies = (
+				940FD9D224B39FF200C0C813 /* Game */,
+			);
 			productName = TVBullsEye;
 			productReference = 940FD9BB24B39F9400C0C813 /* TVBullsEye.app */;
 			productType = "com.apple.product-type.application";
@@ -338,6 +353,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		940FD9D224B39FF200C0C813 /* Game */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Game;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 940FD9B324B39F9400C0C813 /* Project object */;
 }
